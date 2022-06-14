@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+    
+    <!-- Variables CSS -->
+    <link rel="stylesheet" href="./css/base.css">
+    
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Media Queries -->
+    <link rel="stylesheet" href="./css/mediaqueries.css">
+
+    <!-- External fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <title>Andrade Ar - Engenharia Térmica</title>
+</head>
+<body>
+    
+    <header class="" id="header">
+        <nav class="header__nav container" id="navigation">
+            <a href="#">
+                <img src="./assets/logo.png" alt="Logo da DoctorCare" id="imglogo" class="header__logo">
+            </a>
+            <div class="menu">
+                <ul>
+                    <li> <a href="#home" onclick="closeMenu()" class="link-menu"> Início </a> </li>
+                    <li> <a href="#about" onclick="closeMenu()" class="link-menu"> Nossa História </a> </li>
+                    <li> <a href="#services" onclick="closeMenu()"  class="link-menu"> Serviços </a> </li>    
+                    <li> <a href="#projects" onclick="closeMenu()"  class="link-menu"> Projetos </a> </li>
+                    <li> <a href="#contact" onclick="closeMenu()"  class="link-menu"> Contato </a> </li>
+                    <li> <a href="https://bit.ly/3zALWFD" onclick="closeMenu()"  class="button-menu"
+                        target="_blank"> Solicitar Orçamento </a> </li>
+                         
+                </ul>
+                <!-- <div class="menu__social-links">
+
+                </div> -->
+            </div>
+            
+            <button class="open-menu" onclick="openMenu()" aria-label="Abrir Menu" aria-expanded="false">
+                <img src="./assets/mobile-menu-white.svg" alt="Três barras que representam o botão para abertura do menu na versão mobile" id="menumobile">
+            </button>
+            <button class="close-menu" onclick="closeMenu()" aria-label="Fechar Menu" aria-expanded="true">
+                <img src="./assets/close-menu.svg" alt="">
+            </button>
+        </nav>
+    </header>
+
+    <main class="main container" id="home">
+        <h1>SOLUÇÕES PRÁTICAS DE ENGENHARIA MECÂNICA</h1>
+        <p>venha conhecer nossos serviços e obras.</p>
+        <a href="#services" class="main__button">Conhecer Serviços</a>
+    </main>
+
+    <section class="about container" id="about">
+        <div class="about__content">
+            <h2>
+                nossa <br>
+                história
+            </h2>
+            <p>
+                Fundada em 2013, a Andrade Ar teve início efetivo de suas atividades em 2015, após um período de estudo e análise do mercado para oferecermos os melhores e mais qualificados serviços.
+            </p>
+            <p>
+                Para isso contamos com a parceria dos melhores fornecedores, capacitação e treinamento profissional para uma equipe de alta performance, bem com equipamentos que garantam maior qualidade e eficiência nos serviços.
+            </p>
+            <p>
+                Com estes profissionais e nosso amplo conhecimento no ramo, atuamos em todo território nacional capacitados a executar serviços à um preço justo que, contemplando os materiais de alta qualidade e nossas parcerias, é orçado de forma diferenciada visando o melhor preço de mercado.
+            </p> 
+
+            
+        </div>
+        <img src="./assets/test1-about.png" alt="">
+    </section>
+
+    <section class="services container" id="services">
+        <h2>serviços disponíveis</h2>
+            
+        <div class="service__content">
+            <img src="./assets/pressurizaçao-escadas.jpg" alt="" class="service__capa-escadas">
+            <div class="service__content-text">
+                <h3>Pressurização de escadas</h3>
+                <p>Sistema de segurança instalado nas escadas de um edifício em casos de incêndio visando garantir que as pessoas possam evacuar estas edificações em segurança, sem que sejam afetadas pela fumaça oriunda neste tipo de sinistro.</p>
+                <a href="#contact" class="service__button">Solicitar Orçamento</a>
+            </div>
+        </div>
+
+        <div class="service__content">
+            <img src="./assets/detecção-de-incêndio.jpg" alt="">
+            <div class="service__content-text">
+                <h3>Detecção de incêndio</h3>
+                <p>
+                    Sistema responsável por indicar quando e onde há propagação de chamas, evitando o alastramento de fogo.
+                </p>
+                <a href="#contact" class="service__button">Solicitar Orçamento</a>
+            </div>
+        </div>
+
+        <div class="service__content">
+            <img src="./assets/exaustao.jpg" alt="">
+            <div class="service__content-text">
+                <h3>Exaustão mecânica</h3>
+                <p>
+                    Sistema responsável por realizar a troca e ou renovação de ar dos ambientes de edifícios, dentre eles temos: lavabos, sanitários, coifa, aquecedor e mais.
+                </p>
+                <a href="#contact" class="service__button">Solicitar Orçamento</a>
+            </div>
+        </div>
+
+        <div class="service__content">
+            <img src="./assets/ar-condicionado.jpg" alt="">
+            <div class="service__content-text">
+                <h3>Ar condicionado</h3>
+                <p>
+                    Sistema responsável pela refrigeração e ou aquecimento de ambientes.
+                </p>
+                <a href="#contact" class="service__button">Solicitar Orçamento</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects container" id="projects">
+        <h2 class="projects__title">nossas obras</h2>
+        
+        <div class="projects__group">
+            
+            <div class="projects__content">
+                <img src="./assets/p4-mobi-one.png" alt="">
+                <h3>mobi one liberdade</h3>
+                <h5>P4 Engenharia</h5>
+                <p>
+                    Pressurização de escadas <br>
+                    Detecção de incêndio <br>
+                    Ar condicionado área comum <br>
+                    Exaustão mecânica <br>
+                    (lavabos e sanitários)
+                </p>
+      
+            </div>
+
+            <div class="projects__content">
+                <img src="./assets/moderna-wave.png" alt="">
+                <h3>wave alphaville</h3>
+                <h5>Moderna Cipel</h5>
+                <p>
+                    Pressurização de escadas <br>
+                    Detecção de incêndio <br>
+                    Ar condicionado área comum <br>
+                    Exaustão mecânica <br>
+                    (lavabos, sanitários e aquecedor)
+                </p>
+            </div>
+
+        </div>
+
+        <div class="projects__group">
+            
+            <div class="projects__content">
+                <img src="./assets/p4-gentil.png" alt="">
+                <h3>nex one gentil de moura</h3>
+                <h5>P4 Engenharia</h5>
+                <p>
+                    Pressurização de escadas <br>
+                    Detecção de incêndio <br>
+                    Ar condicionado área comum e apartamentos <br>
+                    Exaustão mecânica <br>
+                    (lavabos, sanitários e lavanderia)
+                </p>
+            </div>
+
+            <div class="projects__content">
+                <img src="./assets/p4-bonnard.png" alt="">
+                <h3>bonnard 307</h3>
+                <h5>P4 Engenharia</h5>
+                <p>
+                    Pressurização de escadas <br>
+                    Detecção de incêndio <br>
+                    Instalação de grelhas de ventilação <br>
+                    Ar condicionado área comum <br>
+                    Exaustão mecânica <br>
+                    (garagem, lavabos, sanitários e aquecedor)
+                </p>
+            </div>
+            
+        </div>
+
+        <div class="projects__group">
+            
+            <div class="projects__content">
+                <img src="./assets/paulo-mauro-arena-tower.png" alt="">
+                <h3>arena tower</h3>
+                <h5>Construtora Paulo Mauro</h5>
+                <p>
+                    Exaustão mecânica <br>
+                    (lavabos e sanitários)
+                </p>
+            </div>
+            
+
+            <div class="projects__content">
+                <img src="./assets/cury-caninde.png" alt="">
+                <h3>dez canindé</h3>
+                <h5>Cury</h5>
+                <p>
+                    Pressurização de escadas <br>
+                    Detecção de incêndio <br>
+                </p>
+            </div>      
+        </div>
+
+        <div class="acess__pdf">
+            <h2>você pode conferir todas as obras em nosso catálogo</h2>
+            <a href="./pdf/catalogo-arrumado.pdf" target="_blank">Acessar Catálogo</a>
+        </div>
+    </section>
+
+    <section class="contact container" id="contact">
+        <div class="contact__content">
+            <h2>
+                precisa de orçamento? <br>
+                entre em contato
+            </h2>
+            
+            <div class="contact__content-item">
+                <img src="./assets/email-azul-claro.png" alt="">
+                <p>beatriz@andradear.com.br</p>
+            </div>
+            
+            <div class="contact__content-item">
+                <img src="./assets/phone-azul-claro.png" alt="">
+                <p>(11) 4706-1998</p>
+            </div>
+
+            <div class="contact__content-item">
+                <img src="./assets/whats-azul-claro.png" alt="">
+                <p>(11) 94475-5115</p>
+            </div>
+            <a href="https://bit.ly/3zALWFD" class="contact__button" target="_blank">solicitar orçamento</a>
+
+        </div>
+        <img src="./assets/conversation.1024x752.png" alt="" class="contact__img">
+    </section>
+
+    <footer class="footer container">
+        <div class="footer__logo">
+            <a href="#home">
+                <img src="./assets/logo.png" alt="">
+            </a>
+        </div>
+        <div class="footer__social-links">   
+            <a href="https://www.linkedin.com/in/gabriel-moura-453a6b232/" target="_blank">
+                <img src="./assets/linkedin-square.256x256.png" alt="">
+            </a>
+                
+            <a href="https://bit.ly/3zALWFD" target="_blank">
+                <img src="./assets/brand-whatsapp.256x256.png" alt="">
+            </a>     
+        </div>
+    </footer>
+
+    <a href="#home" class="" id="backToTop">
+        <img src="./assets/back-to-top.svg" alt="Botão com seta pra cima para voltar ao topo da pagina">
+    </a>
+
+
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
