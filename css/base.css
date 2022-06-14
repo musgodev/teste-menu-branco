@@ -1,0 +1,22 @@
+:root {
+    
+    font-size: 62.5%; /* 1rem = 10px */
+    
+    /* Cores */
+    --bg-light: #FFF;
+    --bg-dark: #001D3B;
+    --bg-dark-2: #001328;
+    --blue-light: #2a70b8;
+
+    /* Gradiente */
+    --gradient-button: linear-gradient(90deg, rgba(107,186,221,1) 0%, rgba(64,159,213,1) 50%, rgba(0,112,188,1) 100%);
+
+    /* Tipografias */
+    --poppins: 'Poppins', sans-serif;
+    --bebas: 'Bebas Neue', cursive;
+
+    /* Calc variables */
+    --nav-height: 10vh;
+}
+
+
